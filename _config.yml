@@ -4,6 +4,7 @@ menu:
   关于: /about
   归档: /archive
 
+theme: huno
 # Site favicon
 favicon: /favicon.png
 
@@ -18,3 +19,12 @@ awesome_toc: true
 
 # Enable githubRepoWidget
 github_repo_widget: false
+# URL
+url: http://bing0say.github.io
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+ type: git
+ repo: git@github.com:bing0say/bing0say.github.io.git 
+ branch: master
