@@ -1,335 +1,257 @@
-# HMFAYSAL OMEGA THEME
+# Huno
 
-Project name:	HMFAYSAL OMEGA THEME  
-Author:	Hossain Mohd Faysal  
-Project type:	The Coolest Theme for Jekyll 
-License:	MIT License 
-  
-HMFAYSAL OMEGA is a minimalist, beautiful, responsive theme for Jekyll designed for engineers as well as writers who want their content to take front and center. This theme elegantly wraps each page and post with featured images complementing the content. It was built -- by Engineer slash Mathematician [Hossain Mohd Faysal](http://alum.mit.edu/www/hmfaysal/).
+Huno是为[Hexo](http://hexo.io/)编写的一个响应式的主题，该主题基于[Uno](https://github.com/daleanthony/uno/)。
 
-The theme features:
+![](./demo.gif)
 
-* Twitter Bootstrap 3
-* Option to set featured image that wraps your post in header and footer
-* Custom Javascript to emphasize the first paragraph `p:first-child` of your post
-* Variable templates for articles, quotation, video, photo and status updates (post types)
-* Display Equations via Native MathJax Support
-* Plugin-free/Github Pages Deployment Ready
-* Read time Calculator: Calculation of post read-time based on word count (Via Liquid Tags instead of a plugin)
-* Complex pagination script if you decide to turn pagination on
-* CSS3 transitions for better performance 
-* Ability to turn of animations in _config.yml
-* Readable typography to make your words shine
-* Disqus comments if you choose to enable
-* Simple and clear permalink structure
-* Footer Menu
-* SVG graphics
-* Google Fonts
-* 361 Fontawesome icons
-* Tags for [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) for a better social sharing experience
-* Beautifully crafted [404 page](http://hmfaysal.github.io/hmfaysal-omega-theme/404.html)
-* Custom [categories](http://hmfaysal.github.io/hmfaysal-omega-theme/categories/) and [tags](http://hmfaysal.github.io/hmfaysal-omega-theme/tags/) pages for viewers pleasure
-* Stylesheets for Pygments and Coderay to make your code examples look snazzy
-* Simple search that overlays results based on post title
-* Sitemap for search engines
-* Designed by an Electrical Engineer
+## Demo
 
-For a full list of features, visit [this link](http://hmfaysal.github.io/hmfaysal-omega-theme/theme-setup/about-hmfaysal-omega/)
+[Huno's demo](http://hi.letiantian.me/huno/)
 
-![screenshot of HMFAYSAL OMEGA Theme](https://raw.github.com/hmfaysal/hmfaysal-omega-theme/gh-pages/images/hmfaysal-omega-preview.jpg)
+## 安装
 
-## Basic Setup for new Jekyll site
-
-1. [Install Jekyll](http://jekyllrb.com) and read through [this installation instructions](http://hmfaysal.github.io/hmfaysal-omega-theme/theme-setup/installing-jekyll-on-windows/) if you haven't already.
-2. Fork the [HMFAYSAL OMEGA Theme](https://github.com/hmfaysal/hmfaysal-omega-theme/fork)
-3. Clone the repo you just forked.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data.
-6. Read the documentation below for further customization pointers and documentation.
-
-
-**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't want on your site.
-
----
-
-## Setup for Existing Jekyll site
-
-1. Clone the following folders: `_includes`, `_layouts`, `plugins`, `assets`, and `images`.
-2. Clone the following files and personalize content as need: `about.md`, `technical-details.md`, `theme-setup.md`, `index.html`, `categories.html`, `tags.html`, `feed.xml`, and `sitemap.xml`.
-3. Set the following variables in your `_config.yml` file:
-
-``` yaml
-title:            Site Title
-description:      Site description for the metas.
-logo:             site-logo.png
-disqus_shortname: shortname
-# Assign a default image for your site's header and footer
-default_bg:       some-image.jpg
-search:           true
-share:            true
-# Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
-readtime:         true
-# Turn on or off the fin animations in the header and footer
-animated_fins:    true
-# Specify the fin color in RGB value
-fin_color:        "255,255,255"
-# Change url to your domain. Leave localhost server or blank when working locally.
-url:              "http://localhost:4000"
-
-
-# Owner/author information
-owner:
-  name:           Your Name
-  avatar:         your-photo.jpg
-  email:          your@email.com
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:	  Some Details about yourself
-  # Social networking links used in footer. Update and remove as you like.
-  # To register at HMFAYSAL SOCIAL, visit http://social.hmfaysal.tk
-  twitter:
-  facebook:
-  github:
-  linkedin:
-  instagram:
-  tumblr:
-  hmfaysalsocial:
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    "http://plus.google.com/123123123123132123"
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Home
-    url: /
-    external: false
-    icon: home
-  - title: <i class="icon-book"></i> Documentation
-    url: /documentation
-  - title: Categories
-    url: /categories
-  - title: Tags
-    url: /tags
-  - title: Faysal who?
-    url: /hossain-mohd-faysal
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-pygments:    true
-markdown:    kramdown
-paginate:    6
-paginate_path: "page:num"
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+```plain
+$ git clone git://github.com/someus/huno.git themes/huno
 ```
 
----
+修改Hexo的配置文件`_config.xml`：
+```plain
+theme: huno
+```
 
-## Post Front Matter YAML
 
-HMFAYSAL OMEGA uses variable post templates for articles, quotation, video, photo and status updates. 
+## 兼容性
+在Hexo 3.1.1测试正常。
 
-A new blog post should have the following structure to utilise the themes functions
+## 配置示例
 
-``` yaml
----
-layout: post
-title: "Some Title"					# Title of the post
-description: Some description		# Description of the post, used for Facebook Opengraph & Twitter
-headline: Some headline				# Will appear in bold letters on top of the post
-modified: YYYY-MM-DD				# Date
-category: personal
-tags: []
-image: 
-  feature: some-image.jpg
-comments: true
-mathjax:
+```yaml
+# Header
+menu:
+  首页: /#blog
+  关于: /about
+  归档: /archive
+
+# Site favicon
+favicon: /favicon.png
+
+# Site logo
+# logo: /avatar.png
+
+# Enable Mathjax
+mathjax: true
+
+# Enable awesome-toc
+awesome_toc: true
+
+# Enable githubRepoWidget
+github_repo_widget: false
+```
+
+menu中定义`/#blog`是必须的，示例中的`/about`和`/archive`是两个页面。`/archive`会在下面的**归档页面**中介绍。
+
+**mathjax:**
+
+数学公式支持。其设置（layout/_scripts/mathjax.ejs）如下：
+```
+$(document).ready(function(){
+    MathJax.Hub.Config({ 
+        tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+    });
+});
+```
+
+官网：[mathjax](https://www.mathjax.org/)
+
+
+**awesome_toc:**
+
+为文章生成目录。
+
+官网：[awesome-toc](https://github.com/someus/awesome-toc)
+
+**github_repo_widget:**
+
+可视化显示github中的项目。
+
+官网：[GitHub-jQuery-Repo-Widget](https://github.com/JoelSutherland/GitHub-jQuery-Repo-Widget)
+
+
+## 侧边栏图片
+侧边栏图片URL定义在`source/css/uno.css`中下面的这段代码中：
+```css
+.panel-cover {
+  display: block;
+  position: fixed;
+  z-index: 900;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  background: url(../images/background-cover.jpg) top left no-repeat #666666;
+  background-size: cover; }
+```
+
+可以看出图片路径是`source/images/background-cover.jpg`。可以根据需要替换成不同的图片，或者修改图片URL。例如修改成CDN中的某个图片（[#28](https://github.com/someus/huno/pull/28)）：
+
+```
+background: url("//img.alicdn.com/tps/TB1UC8nJVXXXXbRXpXXXXXXXXXX-1920-1200.jpg") top left no-repeat #666666;
+```
+
+
+## 归档页面
+归档页面会显示分类、标签云以及基于日期的归档。
+
+在主题的配置文件`_config.yml`中：
+```yaml
+# Header
+menu:
+  首页: /#blog
+  关于: /about
+  归档: /archive
+```
+
+创建新的page：
+```plain
+$ hexo new page archive
+$ cd source/archive
+$ vim index.md
+```
+
+内容修改为：
+```
+title: 归档
+layout: page-archive
 ---
 ```
 
-A new status should have the following structure to utilise the themes functions
+浏览器访问`http://127.0.0.1:4000/archive/`即可。
 
-``` yaml
----
-layout: post
-type: status                # ! Important
-title: "Some Title"         # Title of the post
-description: Some description   # Description of the post, used for Facebook Opengraph & Twitter
-headline: Some headline       # Will appear in bold letters on top of the post
-modified: YYYY-MM-DD        # Date
-category: personal
-tags: []
-image: 
-  feature: some-image.jpg
-comments: true
-mathjax:
----
+> !! hexo 默认有一个`/archives`，如果您认为归档页面的url（`/archive`）和这个冲突，可以选更加合适的名称:blush:。
+
+
+## 评论
+支持Disqus和多说，在Hexo配置文件`_config.yml`中设置名称即可，例如：
+```yaml
+# Disqus
+disqus_shortname: letian
+
+# Duoshuo
+duoshuo_shortname: letian
 ```
 
-A new quotation post should have the following structure to utilise the themes functions
+> !!! 如果两个都设置，则两个评论工具都会显示。
 
-``` yaml
----
-layout: post
-type:  quote                # ! Important
-title: "Some Title"         # Title of the post
-description: Some description   # Description of the post, used for Facebook Opengraph & Twitter
-headline: Some headline       # Will appear in bold letters on top of the post
-modified: YYYY-MM-DD        # Date
-category: personal
-tags: []
-image: 
-  feature: some-image.jpg
-comments: true
-mathjax:
----
+## Social Icon
+默认提供了Github的图标，Github用户名请在Hexo的配置文件`_config.yml`中配置，例如：
+```yaml
+# Social
+social:
+  github: someus
 ```
 
-A new video post should have the following structure to utilise the themes functions
+可以根据需要在`layout/_partials/social.ejs`中添加更多的图标。
 
-``` yaml
----
-layout: post
-type:  video                # ! Important
-title: "Some Title"         # Title of the post
-description: Some description   # Description of the post, used for Facebook Opengraph & Twitter
-headline: Some headline       # Will appear in bold letters on top of the post
-modified: YYYY-MM-DD        # Date
-category: personal
-tags: []
-image: 
-  feature: some-image.jpg
-comments: true
-mathjax:
----
+
+## China Social Icon
+> 这套字体来自 [设计素材：国内常用社交图标的web字体](http://www.zcool.com.cn/gfx/ZMzM1MjEy.html)， 版权归原作者所有。在huno中CSS文件做了些修改。
+
+这套字体和上面`Social Icon`的设计得并不一样，如果混用，排版效果会略差。例如，在`layout/_partials/social.ejs`加上：
+
+```
+<li class="navigation__item">
+  <a href="" title="">
+    <i class='icon cs-icon-douban'></i>
+    <span class="label">Douban</span>
+  </a>
+</li>
+
+<li class="navigation__item">
+  <a href="" title="">
+    <i class='icon cs-icon-weibo'></i>
+    <span class="label">Weibo</span>
+  </a>
+</li>
 ```
 
-A new photo post should have the following structure to utilise the themes functions. By default, the featured image is shown on the blog index, but if you want to display another photo, you can choose to do so :)
+效果如下：
 
-``` yaml
----
-layout: post
-type:  photo                # ! Important
-photo: some-image.jpg 		# In case you do not want the featured image to display on the front page
-title: "Some Title"         # Title of the post
-description: Some description   # Description of the post, used for Facebook Opengraph & Twitter
-headline: Some headline       # Will appear in bold letters on top of the post
-modified: YYYY-MM-DD        # Date
-category: personal
-tags: []
-image: 
-  feature: some-image2.jpg
-comments: true
-mathjax:
----
+![](./cs-icon.png)
+
+字体文件位于`source/fonts/china-social/`中，对应的css文件是`source/css/china-social-icon.css`。
+
+
+## 网站统计
+将网站统计（如Google analysis、CNZZ、百度统计等）代码放入`layout/_scripts/site-analytics.ejs`即可。
+
+## 如何将Huno生成的静态网站放在某网站子目录
+
+例如要将其放入`http://hi.letiantian.me/huno/`下，则需要：
+
+**修改Hexo配置文件`_config.yml`:**
+
+```yaml
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://hi.letiantian.me/huno
+root: /huno/
 ```
 
----
+**修改主题的配置文件`_config.yml`:**
 
-## Folder Structure
-``` bash
-HMFAYSAL-OMEGA-THEME
-│
-│
-├───assets
-│   ├───css
-│   │       bootstrap.css
-│   │       style.css
-│   │
-│   ├───font
-│   │       fontawesome─webfont.svg
-│   │       fontawesome─webfontd41d.eot
-│   │       fontawesome─webfontf77b.eot
-│   │       fontawesome─webfontf77b.ttf
-│   │       fontawesome─webfontf77b.woff
-│   │
-│   ├───fonts
-│   │   ├───glyphicons─halflings─regular.eot
-│   │   │       index.html
-│   │   │
-│   │   ├───glyphicons─halflings─regular.svg
-│   │   │       index.html
-│   │   │
-│   │   ├───glyphicons─halflings─regular.ttf
-│   │   │       index.html
-│   │   │
-│   │   └───glyphicons─halflings─regular.woff
-│   │           index.html
-│   │
-│   └───js
-│       │   script.js
-│       │   scripts.min.js
-│       │   waypoints.min.js
-│       │   _main.js
-│       │
-│       ├───plugins
-│       │       jquery.fitvids.js
-│       │       jquery.magnific─popup.js
-│       │       simpleJekyllSearch.js
-│       │
-│       └───vendor
-│               jquery─1.9.1.min.js
-│
-├───images
-│
-├───_includes
-│       browser─upgrade.html
-│       disqus_comments.html
-│       footer.html
-│       head.html
-│       header.html
-│       scripts.html
-│       signoff.html
-│
-├───_layouts
-│       home.html
-│       page.html
-│       post.html
-│
-└───_posts
+```yaml
+# Header
+menu:
+  首页: /huno/#blog
+  关于: /huno/about
+  归档: /huno/archive
+
+# Site favicon
+favicon: /huno/favicon.png
 ```
 
----
+**修改`huno/source/js/main.js`:**
 
-## Questions?
+将
+```js
+if (window.location.pathname != "/") {
+  $('.panel-cover').addClass('panel-cover--collapsed');
+}
+```
 
-Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@hmfaysal](http://twitter.com/hmfaysal) or [file a GitHub Issue](https://github.com/hmfaysal/hmfaysal-omega-theme/issues/new).
+修改为
+```js
+if (window.location.pathname != "/huno/") {
+  $('.panel-cover').addClass('panel-cover--collapsed');
+}
+```
 
----
+**修改`huno/layout/_partials/side-panel.ejs`:**
 
-## Requests?
+将
+```plain
+<% for (var i in theme.menu){ %>
+  <%
+    if (theme.menu[i]+'' == '/#blog') {
+      nav_btn_class = 'blog-button';
+    } else {
+      nav_btn_class = '';
+    }
+  %>
+```
 
-If you have some specific requests for this theme, or if you need help custom coding some elements, message me on Twitter [@hmfaysal](http://twitter.com/hmfaysal) or email me at [hmfaysal@alum.mit.edu](mailto:hmfaysal@alum.mit.edu)
+修改为：
 
----
+```plain
+<% for (var i in theme.menu){ %>
+  <%
+    if (theme.menu[i]+'' == '/huno/#blog') {
+      nav_btn_class = 'blog-button';
+    } else {
+      nav_btn_class = '';
+    }
+  %>
+```
 
-## License
+## 其他
 
-This theme is free and open source software, distributed under the [The MIT License](LICENSE). So feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
-
-If you'd like to give me credit somewhere on your blog or tweet a shout out to [@hmfaysal](https://twitter.com/hmfaysal), that would be pretty sweet.
-
-
-Warm Regards and Stay Creative,  
-Hossain Mohd. Faysal
+如果在中国大陆使用该主题后，访问速度变慢，可以考虑注释掉`source/css/uno.css`的第一行。
