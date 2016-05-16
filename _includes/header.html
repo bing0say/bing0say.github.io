@@ -1,24 +1,3 @@
-<!DOCTYPE html>
-<html>
-<!--
-====================================================
-    __  ____  ______________  _______ ___    __ 
-   / / / /  |/  / ____/   \ \/ / ___//   |  / / 
-  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /  
- / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
-/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
-                                                     
-====================================================
-Owner Name: Hossain Mohammad Faysal
-Profile: https://www.facebook.com/hmfaysal
-Version: 1.1
-Description: Awesome dude, awesome life
-====================================================
--->
-<head>
-{% include head.html %}
-</head>
-<body class="home-template" itemscope itemtype="http://schema.org/WebPage">
 <div id="fade"></div>
 <a id="slide" class="animated fade"></a>
 <aside id="sidebar">
@@ -37,7 +16,7 @@ Description: Awesome dude, awesome life
     
     
 </aside>
-{% if page.imagefeature %}<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom"  style="background-image: url({{ site.url }}/images/{{ page.imagefeature }})" itemscope itemtype="http://schema.org/Organization">
+{% if page.imagefeature %}<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom"  style="background-image: url({{ site.url }}/images/{{ page.imagefeature }})" itemscope itemtype="http://schema.org/Organization">{% if page.imagecredit %}<span class="image-credit">Photo Credit: <a href="{{ page.imagecreditlink }}" target="_blank">{{ page.imagecredit }}</a></span>{% endif %}
 {% else %}
 <header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom"  style="background-image: url({{ site.url }}/images/{{ site.default_bg }})" itemscope itemtype="http://schema.org/Organization">
 {% endif %}
@@ -46,7 +25,7 @@ Description: Awesome dude, awesome life
         <i class="icon-search"></i>
     </button>
 {% endif %}
-{% if site.description %}
+{% if page.headline %}
     <div class="inner">
         <div class="container">
             <a class="brand light" href="{{ site.url }}" role="banner" itemprop="url">
@@ -59,7 +38,7 @@ Description: Awesome dude, awesome life
                 
             </a>
             <h2 class="blog-description light bordered bordered-top" itemprop="description">
-                {{ site.description }}
+                {{ page.headline }}
             </h2>
         </div>
     </div>
@@ -67,8 +46,8 @@ Description: Awesome dude, awesome life
     <div class="inner">
         <div class="container">
             <a class="brand" href="{{ site.url }}" role="banner" itemprop="url">
-                
-                    <img itemprop="logo" src="{{ site.url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />
+
+                {% if site.logo %}<img itemprop="logo" src="{{ site.url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />{% endif %}
 
             <h1 class="blog-title light" itemprop="name">
                 {{ site.title }}
@@ -109,20 +88,3 @@ Description: Awesome dude, awesome life
     {% endif %}
     {% endif %}
 </header>
-
-
-
-<div id="main" class="content" role="main" itemprop="mainContentOfPage">
-    <div class="container">
-        <div class="row">
-            <div class="page-body" itemprop="description">
-            {{ content }}
-            </div>    
-        </div>
-    </div>
-</div>
-    {% include footer.html %}
-
-{% include scripts.html %}  
-</body>
-</html>
