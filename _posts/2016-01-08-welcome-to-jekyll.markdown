@@ -4,22 +4,35 @@ date:   2016-01-08 15:04:23
 categories: [jekyll]
 tags: [jekyll]
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
+我在跟朋友讨论问题的时候，发现他们试图用诡异的逻辑来说服我，通常这种推理结构又是不容易察觉的，稍不小心你就陷入他们的**逻辑谬论**。
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+当我们谈论**逻辑谬论**，就不得不说到最常见的一种——**稻草人论证**：
+> 稻草人（straw man）论证是曲解对方的论点，针对曲解后的论点（替身稻草人）攻击，再宣称已推翻对方论点的论证方式，是一种非形式谬误。 --[ 维基百科 ](https://zh.wikipedia.org/wiki/%E7%A8%BB%E8%8D%89%E4%BA%BA%E8%AB%96%E8%AD%89)
 
-Jekyll also offers powerful support for code snippets:
 
-``` ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
+用**稻草人论证**的人只是向前方射出了一支箭，围绕着箭画出一个靶子，并宣称自己射中了靶心。他们只是打败了自己心中的假想敌而已。
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+遇到**稻草人论证**挺让人抓狂的，并且这种论证在你身边就能经常看到。
+> 不转不是中国人
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+你在网上看到一篇文章（这种文章很愚蠢），末尾写到「不转不是中国人」。文章内容通常党性十足，十分爱国，你看了之后居然还不转，那你就是不爱党，不爱国，不是中国人。你被置于人民的对立面，这时候怎么办？转了，你就是傻逼，不转，你就不是中国人。（真的很难抉择，我会选择我不是中国人XD）
+
+这里就利用了**稻草人攻击**，这文章如此爱国，你不转就是不爱国。
+
+>A：同性恋是正当的，且一点都不可耻。
+>B：你去跟你爸妈、学校、公司公开说同性恋是正当的呀！不敢说的话你敢说同性恋是正当的吗？
+
+这个例子似乎跟**稻草人**没有联系，仔细想想，「正当」和「敢公开宣扬」有必然关系吗？B显然是曲解了A的意思，用曲解后的观点来攻击A。
+
+
+>雷洋妻子表态“不考虑丈夫是否嫖了娼，只在意警方执法是否有问题。”
+>
+>C：“原来雷洋妻子不在乎他嫖娼，早说嘛，带家里来的话就不会发生后来的事。”
+
+不用怀疑，上面的言论是真实的存在于微博上。C也犯了**稻草人论证**的错，雷洋妻子表示**不考虑**丈夫是否嫖了娼，而A曲解成了**不在乎**丈夫嫖娼。
+
+类似于**稻草人攻击**的例子很多，在大V的撕逼中尤为常见，有兴趣的可以去搜搜看。
+
+如何避免这种沟通交流的**稻草人**怪圈？
+
+你可以试着重新更清楚的表达一遍你的观点，并提出对方在哪个地方扭曲误解了你的意思。但，通常傻逼是异常执著且坚定的按照他们的理解认为你就是错的。这时候，拉黑他们是对自己时间的尊重。
