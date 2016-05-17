@@ -1,18 +1,18 @@
 # Site settings
 title: 蒋贤斌的博客
-description: '若批评无自由，则赞美无意义'
+description: '这里应有一句励志的格言'
 url: 'http://bing0say.github.io'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'bingosay'
+  email: bingoosay@gmail.com
+  twitter_username: Hibingosay
+  facebook_username: bingosay
+  github_username:  bing0say
+  linkedin_username:  bingosay
 
 defaults:
   -
