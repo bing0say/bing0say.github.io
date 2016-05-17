@@ -1,5 +1,5 @@
 ---
-title:  "稻草人论证"
+title:  "hello world"
 date:   2016-05-17 21:04:23
 categories: [jekyll]
 tags: [jekyll]
